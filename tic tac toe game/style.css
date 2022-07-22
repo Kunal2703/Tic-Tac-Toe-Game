@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #ff8400;
+}
+
+.game {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+.field {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+}
+
+.fieldBorder {
+  border: 1px solid #050505;
+  box-shadow: 0 0 5px #050505;
+}
+
+.menu {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  text-align: center;
+}
+
+.title {
+  color: #050505;
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 0 0 2px #050505;
+}
+
+.winner {
+  color: #050505;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: 0 0 2px #050505;
+}
+
+.start {
+  margin: 20px auto 0 auto;
+  width: 50%;
+  padding: 10px 0 10px 0;
+  border: 2px solid #050505;
+  color: #050505;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.start:hover {
+  box-shadow: 0 0 5px #050505;
+  transform: scale(1.1);
+  text-shadow: 0 0 5px #050505;
+}
+
+.square {
+  box-sizing: border-box;
+  border: 1px solid #050505;
+  box-shadow: inset 0 0 5px rgb(20, 20, 20);
+  transition: all 0.1s;
+  cursor: pointer;
+  line-height: 100px;
+  text-align: center;
+  font-size: 5rem;
+  color: #050505;
+  text-shadow: 0 0 2px #050505;
+}
+
+.square:hover {
+  box-shadow: inset 0 0 10px rgb(20, 20, 20), 0 0 5px #050505;
+}
